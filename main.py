@@ -1,7 +1,6 @@
 import os
 import sys
 
-# Добавляем путь к DLL torch для собранного exe
 if getattr(sys, "frozen", False):
     base_dir = getattr(sys, "_MEIPASS", os.path.dirname(sys.executable))
     torch_lib = os.path.join(base_dir, "torch", "lib")
@@ -11,7 +10,6 @@ if getattr(sys, "frozen", False):
         except Exception:
             pass
 
-# torch ОБЯЗАН импортироваться строго ДО PyQt5
 import torch
 
 from PyQt5.QtWidgets import QApplication
