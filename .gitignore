@@ -20,3 +20,4 @@ weights/*.pth
 # IDE
 .vscode/
 .idea/
+liver-seg/
