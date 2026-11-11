@@ -3,20 +3,20 @@ seed: 42
 
 # Модель 
 model:
-  weights: model/best_3d_unet.pth   # обученная 3D U-Net
-  base: 16                          # ширина сети
-  device: auto                      # auto | cuda | cpu
+  weights: model/best_3d_unet.pth   
+  base: 16                       
+  device: auto                    
 
 # Предобработка 
 preprocessing:
-  target_shape: [128, 128, 128]     # размер входного объёма сети
-  window: [-100, 200]               # диапазон КТ (HU) для нормализации
+  target_shape: [128, 128, 128]     
+  window: [-100, 200]              
 
 # Постобработка
 postprocess:
-  min_component_voxels: 500         # удалять 3D-объекты меньше этого размера
-  closing_iterations: 1             # морфологическое замыкание
+  min_component_voxels: 500         
+  closing_iterations: 1             
 
 # База данных
 database:
-  path: data/liver.db               # SQLite
+  path: data/liver.db        
