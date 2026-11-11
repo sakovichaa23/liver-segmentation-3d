@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# Данные, веса, база (всё большое и приватное)
+data/
+weights/*.pth
+*.nii
+*.nii.gz
+*.dcm
+*.zip
+*.db
+
+# Docker
+.env
+
+# IDE
+.vscode/
+.idea/
